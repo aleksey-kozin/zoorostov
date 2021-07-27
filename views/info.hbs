@@ -1,0 +1,28 @@
+<div class="container">
+
+  {{!-- Название Животного --}}
+  <div class="title">
+    <h2>{{findAnimal.name}}</h2>
+  </div>
+
+  <!-- Основной блок слайдера -->
+  <div class="slider">
+
+    {{#each findAnimal.img}}
+    <div class="item">
+      <img src="/{{this}}">
+    </div>
+    {{/each}}
+
+    <!-- Кнопки-стрелочки -->
+    <a class="previous" style="text-decoration: none;" onclick="previousSlide()">&#10094;</a>
+    <a class="next" style="text-decoration: none;" onclick="nextSlide()">&#10095;</a>
+
+  </div>
+
+  {{!-- Информация о животном --}}
+  <div class="info">
+    <span>{{findAnimal.description}}</span>
+  </div>
+
+</div>

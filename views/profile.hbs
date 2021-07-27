@@ -1,0 +1,22 @@
+<div id="profileUser" class="container">
+
+  {{#if findUser}}
+  <div id="profileIcon" class="d-flex flex-column align-items-center p-2 bd-highlight">
+
+    <h2>{{findUser.name}}</h2>
+
+    <img style="width: 250px; border-radius: 20px;" src="/img/{{findUser.image}}"
+      class="img-fluid animate__animated animate__pulse animate__slow animate__infinite">
+
+    <div id="formUpload" class="hide">
+      <form id="formUploadSubmit" action="/profile/foto" method="post" enctype="multipart/form-data">
+        <input type="file" name="pictures" />
+        <button type="submit" class="btn btn-success">Success</button>
+      </form>
+    </div>
+
+    <div class="info">{{findUser.info}}</div>
+
+  </div>
+  {{/if}}
+</div>

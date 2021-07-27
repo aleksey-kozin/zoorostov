@@ -1,0 +1,49 @@
+
+<div id='video-wrapper'>
+
+  <video loop muted autoplay poster=''>
+
+    <source src='mong.mp4' type='video/mp4' />
+
+  </video>
+
+  <div class='content light d-flex align-items-lg-start'>
+
+    <div class='container text-center'>
+
+      <h1>Тарифы для посещения</h1>
+
+      <table class='table'>
+        <thead>
+          <tr>
+            <th scope='col'></th>
+            <th scope='col'>В сопровождении взрослых (дети до 10 лет)</th>
+            <th scope='col'>Время посещения</th>
+            <th scope='col'>Цена в будние дни</th>
+            <th scope='col'>Цена в выходные дни</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope='row'>Взрослые</th>
+            <td>-</td>
+            <td>09:00 - 20:00</td>
+            <td>{{price_ad_d}}</td>
+            <td>{{ price_ad_w}}</td>
+          </tr>
+          <tr>
+            <th scope='row'>Дети</th>
+            <td>Обязательно</td>
+            <td>09:00 - 17:00</td>
+            <td>{{ price_ch_d}}</td>
+            <td>{{price_ch_w }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    </div>
+
+  </div>
+
+</div>
